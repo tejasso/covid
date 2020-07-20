@@ -2,9 +2,6 @@
 // Note that you can only use Firebase Messaging here, other Firebase libraries
 // are not available in the service worker.
 
-
-const messaging = firebase.messaging();
-
 importScripts('https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/7.15.0/firebase-messaging.js');
 
@@ -21,6 +18,8 @@ firebase.initializeApp({
     appId: '1:727698141084:web:0ef8253106c0a90f9de259',
     measurementId: 'G-L9JXWLDF4V',
 });
+
+const messaging = firebase.messaging();
 
 
 
